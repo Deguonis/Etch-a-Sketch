@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f0f0f0;
+	font-family: Ariel, sans-serif;
+}
+
+#container {
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px solid #333;
+	background-color: white;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.125);
+}
+
+.grid-item {
+	box-sizing: border-box;
+	border: 1px solid #eee;
+}
+
+.grid-item:hover {
+	background-color: blue;
+}
+
+h1 {
+	padding: 1.125rem;
+}
+
+.controls {
+	display: flex;
+	width: 600px;
+	gap: 1rem;
+	margin: 1rem 0;
+}
+
+button {
+	padding: 0.75rem;
+	background-color: yellow;
+	border: 0;
+	border-radius: 1rem;
+	flex: 1 1;
+	cursor: pointer;
+	font-size: 1rem;
+}
